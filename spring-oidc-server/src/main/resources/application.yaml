@@ -1,0 +1,22 @@
+server:
+  port: 8081
+spring:
+  security:
+    oauth2:
+      client:
+        #GUI
+        registration:
+          keycloak:
+            provider: keycloak
+            client-id: spring-oidc-clientid
+            client-secret: 36ffc90a-7a4f-4b1a-9578-c8463a3c4ecf
+            client-authentication-method: basic
+            authorization-grant-type: authorization_code
+            scope:
+              - openid
+              - email
+              - profile
+        provider:
+          #GUI
+          keycloak:
+            issuer-uri: http://localhost:8080/auth/realms/oidcrealm
