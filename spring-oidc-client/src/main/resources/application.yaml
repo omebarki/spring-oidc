@@ -3,13 +3,10 @@ server:
 
 security:
   oauth2:
-    resource:
-      id: account
     client:
-      client-id: spring-oidc-clientid
-      client-secret: 36ffc90a-7a4f-4b1a-9578-c8463a3c4ecf
+      client-id: spring-oidc-clientid-for-api
+      client-secret: 0fde0459-546b-4440-8aca-0b0843a3543f
       grant-type: client_credentials
-      scope: openid
       access-token-uri: http://localhost:8080/auth/realms/oidcrealm/protocol/openid-connect/token
 omar:
   server:
