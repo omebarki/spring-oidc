@@ -18,4 +18,8 @@ class HelloController {
     public ResponseEntity<OAuth2Authentication> hello(OAuth2Authentication currentUser) {
         return ResponseEntity.ok(currentUser);
     }
+    @GetMapping("/hello")
+    public String  hello() {
+        return "Hello!";
+    }
 }

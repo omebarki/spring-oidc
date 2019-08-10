@@ -4,10 +4,10 @@ server:
 security:
   oauth2:
     client:
-      client-id: spring-oidc-clientid-for-api
-      client-secret: 0fde0459-546b-4440-8aca-0b0843a3543f
+      clientId: b01ad011
+      clientSecret: a8ac56b85ea919b4c10f109a80d97939
       grant-type: client_credentials
-      access-token-uri: http://localhost:8080/auth/realms/oidcrealm/protocol/openid-connect/token
+      access-token-uri: http://192.168.1.138:8080/auth/realms/3scalesso/protocol/openid-connect/token
 omar:
   server:
-    endpoint-url: http://omarserver:8081/me
+    endpoint-url: https://omarapi-3scale-apicast-staging.192.168.99.100.nip.io:443/hello

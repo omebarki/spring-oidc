@@ -3,8 +3,8 @@ server:
 security:
   oauth2:
     client:
-      clientId: spring-oidc-clientid
-      clientSecret: 36ffc90a-7a4f-4b1a-9578-c8463a3c4ecf
+      clientId: 9a244e57
+      clientSecret: 12ea7b9b23fe2e7f39741ba2e352addc
     resource:
-      user-info-uri: http://localhost:8080/auth/realms/oidcrealm/protocol/openid-connect/userinfo
-      token-info-uri: http://localhost:8080/auth/realms/oidcrealm/protocol/openid-connect/token/introspect
+      user-info-uri: http://192.168.1.138:8080/auth/realms/3scalesso/protocol/openid-connect/userinfo
+      token-info-uri: http://192.168.1.138:8080/auth/realms/3scalesso/protocol/openid-connect/token/introspect
