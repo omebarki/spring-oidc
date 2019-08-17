@@ -1,0 +1,10 @@
+server:
+  port: 8083
+security:
+  oauth2:
+    client:
+      clientId: spring-oidc-clientid2
+      clientSecret: 5fb3e6a3-3503-416a-8c7d-ca27c33aff4f
+    resource:
+      user-info-uri: http://localhost:8080/auth/realms/oidcrealm/protocol/openid-connect/userinfo
+      token-info-uri: http://localhost:8080/auth/realms/oidcrealm/protocol/openid-connect/token/introspect

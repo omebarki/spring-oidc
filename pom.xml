@@ -20,6 +20,7 @@
     </properties>
 
     <modules>
+        <module>spring-oidc-server2</module>
         <module>spring-oidc-server</module>
         <module>spring-oidc-client</module>
     </modules>

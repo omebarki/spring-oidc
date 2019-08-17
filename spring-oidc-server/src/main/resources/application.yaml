@@ -5,6 +5,11 @@ security:
     client:
       clientId: spring-oidc-clientid
       clientSecret: 36ffc90a-7a4f-4b1a-9578-c8463a3c4ecf
+      grant-type: client_credentials
+      accessTokenUri: http://localhost:8080/auth/realms/oidcrealm/protocol/openid-connect/token
     resource:
       user-info-uri: http://localhost:8080/auth/realms/oidcrealm/protocol/openid-connect/userinfo
       token-info-uri: http://localhost:8080/auth/realms/oidcrealm/protocol/openid-connect/token/introspect
+omar:
+  server:
+    endpoint-url: http://localhost:8083/me
