@@ -1,16 +1,26 @@
 server:
   port: 8082
 
-security:
-  oauth2:
-    resource:
-      id: account
-    client:
-      client-id: spring-oidc-clientid
-      client-secret: 36ffc90a-7a4f-4b1a-9578-c8463a3c4ecf
-      grant-type: client_credentials
-      scope: openid
-      access-token-uri: http://localhost:8080/auth/realms/oidcrealm/protocol/openid-connect/token
+spring:
+  security:
+    oauth2:
+      client:
+        #GUI
+        registration:
+          keycloak:
+            provider: keycloak
+            client-id: spring-oidc-clientid-for-api
+            client-secret: 0fde0459-546b-4440-8aca-0b0843a3543f
+            client-authentication-method: basic
+            authorization-grant-type: authorization_code
+            scope:
+              - openid
+              - email
+              - profile
+        provider:
+          #GUI
+          keycloak:
+            issuer-uri: http://localhost:8080/auth/realms/oidcrealm
 omar:
   server:
-    endpoint-url: http://omarserver:8081/me
+    endpoint-url: http://localhost:8081/me
